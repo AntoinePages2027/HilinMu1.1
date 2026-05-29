@@ -1,0 +1,189 @@
+{
+  "project": "Hilin Mu Master Dataset Reconstruction",
+  "status": "School name standardization in progress",
+  "cohort_status": {
+    "C4_2021_2022": {
+      "status": "Sub-master built",
+      "girls": "999 int + 850 ctrl, 31 pairs",
+      "complete": [
+        "pre/post test scores (both)",
+        "EOY status (both)",
+        "gov exam scores (both)",
+        "pair matching"
+      ],
+      "partial": [
+        "college tracking: 58% int (Tarna school = 52 girls entirely untracked), 61% ctrl"
+      ],
+      "missing": [],
+      "source_files": [
+        "Suivi_des_Filles_Controle_au_college_1_.xlsx (base, both sides)",
+        "Copy_of_CM2_Primaire_Base_de_donnees_Intervention__Controle_2022_.xlsx (32 missing EOY filled)",
+        "Master dataset Working Core Sheet rows 166-227 (pair matching)"
+      ],
+      "data_quality_notes": [
+        "Double-zero baselines: 195 int (19.5%), 72 ctrl (8.5%) — recode as NA",
+        "Tarna: 52 Admise girls with zero college tracking — data never collected",
+        "Suivi intervention sheet was hidden in Google Sheets",
+        "Copy_CM2 absence column (Nbre d'absence/fille) is #ERROR! — not usable"
+      ]
+    },
+    "C5_2022_2023": {
+      "status": "Sub-master built",
+      "girls": "77 int + 56 ctrl, 3 pairs (pilot only, Sae Saboua)",
+      "complete": [
+        "pre/post test scores (both)",
+        "EOY status (both)",
+        "gov exam scores (both)",
+        "college tracking (both)",
+        "pair matching"
+      ],
+      "missing": [],
+      "source_files": [
+        "Copy_of_Base_Phase_Pilote_CM2.xlsx (= Hilin_Mu_C5_CM2_inscription_2023-08-10 = 2023-08-10_Base_Phase_Pilote_CM2 — all identical)"
+      ],
+      "data_quality_notes": [
+        "Small pilot: only 3 pairs in Sae Saboua",
+        "College tracking column was present but rows were grouped/collapsed in Google Sheets"
+      ]
+    },
+    "C6_2023_2024": {
+      "status": "Sub-master built, needs name standardization",
+      "girls": "~818 int + ~879 ctrl, 34 pairs",
+      "complete": [
+        "int pre/post test scores",
+        "EOY status (both, all 4 communes)",
+        "CFEPD exam scores (both)",
+        "college tracking (both, all 4 communes)",
+        "pair matching"
+      ],
+      "missing": [
+        "Control pre/post test scores — CONFIRMED NON-EXISTENT"
+      ],
+      "source_files": {
+        "pre_post_scores": "CM2_BASE_DE_DONNEES_Cohorte_6_062824.xlsx (820 int girls only)",
+        "EOY_and_CFEPD_by_commune": [
+          "Tibiri_Intervention.xlsx",
+          "Tibiri_Control.xlsx",
+          "Djirataoua_Intervention.xlsx",
+          "Djirataoua_Control.xlsx",
+          "Sae_Saboua_Intervention.xlsx",
+          "Sae_Saboua_Control.xlsx",
+          "Safo_Intervention_1_.xlsx",
+          "Safo_Control.xlsx"
+        ],
+        "college_tracking": [
+          "Tibiri_TG-Situation_des_ecoles_controles_Hilin_Mu_C6 (Tibiri ctrl)",
+          "Djirataoua_intervention_Hilin_Mu_C6_COLLECTE (Djirataoua int — Inscription sheet)",
+          "Djirataoua_les_ecoles_controles_FILLES_Hilin_Mu_C6 (Djirataoua ctrl)",
+          "SAFO_TG_situation_des_filles_controles_Hilin_Mu_C6 (Safo ctrl)"
+        ],
+        "pair_matching": "15_03_2023_Base_de_donnee_HILIN_MU (Matching 2023 tab — C5 CM1 pairs = C6 CM2 pairs)"
+      },
+      "data_quality_notes": [
+        "C5 CM1 pair matching = C6 CM2 pair matching (same schools, girls advanced one grade)",
+        "No single consolidated file — data scattered across 14 commune-level files",
+        "Observations column uses CEG (not Admise) for girls passing to secondary",
+        "Sae Saboua int and Tibiri/Safo int college tracking not in separate files — may be in base commune files"
+      ]
+    },
+    "C7_2024_2025": {
+      "status": "Sub-master built, needs name standardization",
+      "girls": "718 int + 586 ctrl, 52 pairs (incl 12 Tchadoua CM1-only)",
+      "complete": [
+        "pre/post test scores (both)",
+        "EOY status (both)",
+        "CFEPD exam scores (both)",
+        "college tracking (both, admises only)",
+        "pair matching"
+      ],
+      "missing": [
+        "Tchadoua CM2 outcomes (CM1 only this year)"
+      ],
+      "source_files": [
+        "CM2_Consolidated_YearEnd_results_I_C_Hilin_Mu_C7.xlsx (merged pre-test + year-end, both sides)",
+        "Situation_des_filles_admises_au_CFEPD_COHORTE_7__2_.xlsx (college tracking, both sides)",
+        "Les_ecoles_interventions_et_controles_classees_par_communes_2025_1_.docx (pair matching, 52 pairs)"
+      ],
+      "data_quality_notes": [
+        "Consolidated file created via fuzzy name matching (match_type: exact/fuzzy/none)",
+        "Headcount discrepancies across files: Consolidated=1304, Situation=1293, Pre-test=1204",
+        "~90 control girls have year-end outcomes but no pre-test",
+        "Tchadoua pairs 41-52 are CM1 only — no CM2 outcomes this year",
+        "First randomized cohort with baseline testing for both groups"
+      ]
+    }
+  },
+  "five_target_outcomes": [
+    "Taux d'Abandon — dropout rate (girls who left CM2 before year-end)",
+    "Taux de Reussite — exam pass rate (Admise / girls who sat for exams)",
+    "Taux d'Inscription — secondary enrollment rate (enrolled in 6eme / Admise)",
+    "Math scores — pre/post Hilin Mu test scores",
+    "French scores — pre/post Hilin Mu test scores"
+  ],
+  "key_methodological_decisions": [
+    "Double-zero baselines (0/20 both Math and French) recoded as NA — likely untested, not genuine zeros",
+    "CFM/CET transfers classified separately from academic outcomes",
+    "College tracking: Admise ≠ enrolled. Need separate confirmation of actual 6eme enrollment",
+    "Observations column (CEG/Redouble/CFM) = exam outcome. Inscrite/Presente = actual enrollment verification",
+    "CM1 Passante = passed to CM2. CM2 Admise/CEG = passed CFEPD exam",
+    "All rates to be computed from raw girl-level data, not pre-computed summary sheets"
+  ],
+  "current_task": "Rebuild sub-masters and compiled master with finalized canonical names",
+  "next_steps": [
+    "1. Apply 146-entry canonical mapping to all source data",
+    "2. Rebuild C4, C5, C6, C7 sub-masters with standardized school names",
+    "3. Build compiled paired master (120 pairs, C4-C7) matching original historical dataset format",
+    "4. Format: alternating intervention/control rows, grouped by commune",
+    "5. Columns needed: Cohort, Start Year, Eval Year, Commune, Pair, School, Type (Int/Ctrl), N Girls, N Years HM (CM1 and/or CM2), plus 5 outcome columns",
+    "6. Reference the original historical dataset (Antoine_s_Copy_of_LFF_Hilin_Mu_historical_data_for_RCT_evaluation_UCB_1_.xlsx) for format",
+    "7. English headers throughout, French proper nouns preserved"
+  ],
+  "files_built": [
+    "Cohort4_Merged_Database.xlsx — girl-level, both sides, tracking flag column",
+    "Cohort5_SubMaster.xlsx — girl-level, both sides, all complete",
+    "Cohort6_SubMaster.xlsx — int test scores + school metrics + transition rates + matching",
+    "Cohort7_SubMaster.xlsx — consolidated + college tracking + 52-pair matching",
+    "Hilin_Mu_MasterDoc_Paired.xlsx — 120 paired rows, partially matched (name standardization needed)",
+    "C7_Pair_Matching.xlsx — 52 pairs from docx",
+    "School_Name_Review_By_Commune.xlsx — for manual review",
+    "Evaluating_Hilin_Mu_Project_updated.pptx — C4 deep dive presentation",
+    "Hilin_Mu_Dataset_Status.pptx — status report across C4-C7"
+  ],
+  "original_flawed_dataset": "Antoine_s_Copy_of_LFF_Hilin_Mu_historical_data_for_RCT_evaluation_UCB_1_.xlsx",
+  "key_contacts": {
+    "PI": "Dr. Laura Layla Kwong (Layla)",
+    "M&E": "Sarah Jane Holcombe",
+    "Field_team_Niger": "Zeinabou, Zouera, Chamsiya"
+  },
+  "communes": [
+    "Tibiri",
+    "Djirataoua",
+    "Safo",
+    "Sae Saboua",
+    "Tchadoua (C7 only, CM1 only)"
+  ],
+  "redundant_files_identified": [
+    "2022-12-12_Base_Suivi_6_e_1_ and _2_ — identical, superseded by Suivi des Filles",
+    "2022-01-03 and 2022-02-22 Primaire files — superseded by Suivi des Filles",
+    "Hilin_Mu_CM2_BASE_DE_DONNEES_Cohorte_6 — same as CM2_BASE_DE_DONNEES but messier",
+    "20-02-2024_CM2_BASE_DE_DONNEE — earliest C6, baseline only, superseded",
+    "BASE_ECOLES_CONTROLES_2 and _2_1_ — identical",
+    "Two duplicate C5 pilot files",
+    "Multiple duplicate C6 commune control files",
+    "Pre-computed transition rate sheets — redundant with girl-level tracking data"
+  ],
+  "canonical_mapping_file": "canonical_mapping.txt",
+  "canonical_mapping_count": "146 remappings",
+  "canonical_name_notes": [
+    "User changed Garin Madji -> Garin Magaji (not Garin Madji)",
+    "User changed Maza Tsaye 1 -> Mazan Tsaye 1 (with n)",
+    "User changed Maza Tsaye 2 -> Mazan Tsaye 2 (with n)",
+    "User changed Soura Magagi Rogo -> Soura Magaji Rogo",
+    "User changed Safo Chadawa -> Safo Chadaoua",
+    "User changed Kankaren Safo -> Kankaran Safo",
+    "User confirmed Karambi Sofoua as canonical (not Tsofoua)",
+    "User confirmed Kontagora Sofoua as canonical for the Djirataoua control school (distinct from Kontagora Goussaoua)",
+    "User added M.Saboua -> Mallamai Saboua",
+    "User added Soura Saraki -> maps to Soura Sarkin Galma 1 (abbreviated name in C7 docx)"
+  ]
+}
