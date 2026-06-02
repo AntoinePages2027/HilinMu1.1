@@ -1,4 +1,4 @@
-# Hilin Mu — Master Dataset Source Repository (Cohorts 4–7)
+# Hilin Mu: Master Dataset Source Repository (Cohorts 4–7)
 
 Canonical source, built, and reference files for the Hilin Mu RCT master-dataset
 reconstruction, organized by cohort and grade level (CM1 / CM2). Analysis unit is
@@ -23,10 +23,10 @@ Each canonical file is also kept under its original LFF filename for provenance;
 
 | Cohort | CM1 | CM2 | Notes |
 |--------|-----|-----|-------|
-| **C4** (2021–22) | ✅ complete | ✅ complete | Marcus files; CM2 has baseline+endline, CFEPD compositions, 3 EOY years, +4 extra control schools. |
-| **C5** (2022–23, pilot) | ✅ complete | ✅ complete | Saé Saboua pilot; EOY + college tracking verified. |
-| **C6** (2023–24) | ✅ complete | ⚠️ near-complete | CM2 is a *set* of per-commune files (never consolidated). See gap below. |
-| **C7** (2024–25) | ✅ complete | ✅ complete | Zero schools missing. |
+| **C4** (2021–22) |  complete | complete | Marcus files; CM2 has baseline+endline, CFEPD compositions, 3 EOY years, +4 extra control schools. |
+| **C5** (2022–23, pilot) | complete | complete | Saé Saboua pilot; EOY + college tracking verified. |
+| **C6** (2023–24) | Missing Pre-Post Test | Missing Pre-Post Test | CM2 is a *set* of per-commune files (never consolidated). See gap below. |
+| **C7** (2024–25) | complete | complete | Zero schools missing. |
 
 **At school level, C4/C5/C7 are complete; C6 is complete except the gap below.**
 
@@ -34,7 +34,8 @@ Each canonical file is also kept under its original LFF filename for provenance;
 - **C6 control schools with no data in any file:** Safo Chadaoua, Radi Centre 1,
   Radi Centre 2, Radi Quartier (Safo); Karambi Saboua (Saé Saboua).
 - **C6 CM2 missing** for Soura Saraki and Maza Tsaye 2 (CM1 found, CM2 not).
-- **C7:** none outstanding.
+- **C6 CM1 pre/post test** 
+- **C7:** none outstanding thanks to recent dataset update provided by Sarah. 
 
 ## School-name standardization
 - Authoritative crosswalk: **`_shared/canonical_mapping_v2.txt`** (167 variant→canonical
@@ -52,14 +53,16 @@ Each canonical file is also kept under its original LFF filename for provenance;
 - **C6 CM2** is per-commune: pull EOY/CFEPD outcomes from the `*_EOY_Status_GovScores`
   files and secondary enrollment from the `*_CollegeTracking` files; each also has a
   `CM1 & CM2 Metrics` tab with school-level counts usable directly.
-- **C6 matching:** `C6_CM2_PairMatching_OFFICIAL_MarcusZip.xlsx` is the real LFF doc
-  ("Matching des écoles pour cohorte 6, 2023-2024"). Authoritative for *pairing*; use
-  source files for canonical spelling. (`_PROXY` retained as backup only.)
+- **C6 matching:** `C6_CM2_PairMatching_OFFICIAL_MarcusZip.xlsx` is a real LFF doc
+  ("Matching des écoles pour cohorte 6, 2023-2024"). Placeholder for *pairing* until further verification/confirmation from LFF; use
+  source files for canonical spelling. (`_PROXY` retained as backup only.). 
   *Note:* LFF flagged a possible pairing error (Kalgon Waraou) — pairings pending correction.
 - **C7 CM1 canonical:** drop footer rows lacking a `groupIC2` value (SD/count summaries).
 - **Known defects:** C4 CM2 control sheets carry `#VALEUR!` in `Moyenne générale`
   (recompute); C5 CM2 intervention has `#REF!` in `Identifiant Unique` (irrelevant at
-  school level). Status labels vary across files — normalize before computing rates.
+  school level). Status labels vary across files -> We must normalize before computing rates.
+
+  **ALL MATCHING/PAIRING DOCS AWAITING VERIFICATION FROM LFF**
 
 *Last updated after full header-inventory verification of all repo files and the
 school-name standardization pass.*
