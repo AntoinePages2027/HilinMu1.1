@@ -5,12 +5,12 @@ reconstruction, organized by cohort and grade level (CM1 / CM2). Analysis unit i
 **school-level** (school × cohort × side).
 
 ## Where to look
-- **`CANDIDATES.md`** — the authoritative list of which file is essential (canonical
+- **`CANDIDATES.md`** - a tentative list of which file is essential (canonical
   source) vs. supplementary, per cohort × level. **Start here.**
-- **`provenance_flagged.csv`** — every file with its source, hash, per-sheet row counts,
+- **`provenance_flagged.csv`** - every file with its source, hash, per-sheet row counts,
   and a `master_doc_candidate` TRUE/FALSE flag.
-- **`_shared/canonical_mapping_v2.txt`** — the authoritative school-name crosswalk.
-- **`school_name_crosswalk_REVIEW.xlsx`** — working crosswalk (full classification + review queue).
+- **`_shared/canonical_mapping_v2.txt`** - working school-name crosswalk (crosswalk = standardized mapping). Needs confirmation from LFF.
+- **`school_name_crosswalk_REVIEW.xlsx`** - working crosswalk (full classification + review queue).
 
 ## Layout
 ```
