@@ -38,7 +38,7 @@ Each canonical file is also kept under its original LFF filename for provenance;
 - **C7:** none outstanding thanks to recent dataset update provided by Sarah. 
 
 ## School-name standardization
-- Authoritative crosswalk: **`_shared/canonical_mapping_v2.txt`** (167 variant→canonical
+- Tentative crosswalk: **`_shared/canonical_mapping_v2.txt`** (167 variant→canonical
   mappings, 80 canonicals). Built by fuzzy matching (commune-blocked, sibling-number
   protected) + manual review; `school_name_crosswalk_REVIEW.xlsx` is the working file.
 - Confirmed: **Maza Tsaye** (no "n"), **Kontagora** (not Kantagora/Kountagora),
