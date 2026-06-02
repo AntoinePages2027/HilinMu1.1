@@ -23,10 +23,10 @@ Each canonical file is also kept under its original LFF filename for provenance;
 
 | Cohort | CM1 | CM2 | Notes |
 |--------|-----|-----|-------|
-| **C4** (2021–22) | ✅ complete | ✅ complete | Marcus files; CM2 has baseline+endline, CFEPD compositions, 3 EOY years, +4 extra control schools. |
-| **C5** (2022–23, pilot) | ✅ complete | ✅ complete | Saé Saboua pilot; EOY + college tracking verified. |
-| **C6** (2023–24) | ✅ complete | ⚠️ near-complete | CM2 is a *set* of per-commune files (never consolidated). See gap below. |
-| **C7** (2024–25) | ✅ complete | ✅ complete | Zero schools missing. |
+| **C4** (2021–22) |  complete | complete | Marcus files; CM2 has baseline+endline, CFEPD compositions, 3 EOY years, +4 extra control schools. |
+| **C5** (2022–23, pilot) | complete | complete | Saé Saboua pilot; EOY + college tracking verified. |
+| **C6** (2023–24) | Missing Pre-Post Test | Missing Pre-Post Test | CM2 is a *set* of per-commune files (never consolidated). See gap below. |
+| **C7** (2024–25) | complete | complete | Zero schools missing. |
 
 **At school level, C4/C5/C7 are complete; C6 is complete except the gap below.**
 
@@ -34,7 +34,8 @@ Each canonical file is also kept under its original LFF filename for provenance;
 - **C6 control schools with no data in any file:** Safo Chadaoua, Radi Centre 1,
   Radi Centre 2, Radi Quartier (Safo); Karambi Saboua (Saé Saboua).
 - **C6 CM2 missing** for Soura Saraki and Maza Tsaye 2 (CM1 found, CM2 not).
-- **C7:** none outstanding.
+- **C6 CM1 pre/post test** 
+- **C7:** none outstanding thanks to recent dataset update provided by Sarah. 
 
 ## School-name standardization
 - Authoritative crosswalk: **`_shared/canonical_mapping_v2.txt`** (167 variant→canonical
