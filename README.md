@@ -1,4 +1,4 @@
-# Hilin Mu: Master Dataset Source Repository (Cohorts 4–7)
+# Hilin Mu: Master Dataset Source Repository (Cohorts 4-7)
 
 Canonical source, built, and reference files for the Hilin Mu RCT master-dataset
 reconstruction, organized by cohort and grade level (CM1 / CM2). Analysis unit is
@@ -25,10 +25,10 @@ Each canonical file is also kept under its original LFF filename for provenance;
 |--------|-----|-----|-------|
 | **C4** (2021–22) |  complete | complete | Marcus files; CM2 has baseline+endline, CFEPD compositions, 3 EOY years, +4 extra control schools. |
 | **C5** (2022–23, pilot) | complete | complete | Saé Saboua pilot; EOY + college tracking verified. |
-| **C6** (2023–24) | Missing Pre-Post Test | Missing Pre-Post Test | CM2 is a *set* of per-commune files (never consolidated). See gap below. |
+| **C6** (2023–24) | Missing Pre-Post Test | Patrial Coverage for Pre-Post Test (~40%) | CM2 is a *set* of per-commune files (never consolidated). See gap below. |
 | **C7** (2024–25) | complete | complete | Zero schools missing. |
 
-**At school level, C4/C5/C7 are complete; C6 is complete except the gap below.**
+**At school level, dropout / CFEPD-pass / secondary-enrollment outcomes are available for all of C4–C7 (minus the C6 school gap below). Math & French score outcomes are the exception for C6. CM2 control and cohort-wide CM1 pre/post are absent (see gap list).**
 
 ## Remaining data gap (the LFF ask)
 - **C6 control schools with no data in any file:** Safo Chadaoua, Radi Centre 1,
