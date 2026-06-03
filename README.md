@@ -5,10 +5,17 @@ reconstruction, organized by cohort and grade level (CM1 / CM2). Analysis unit i
 **school-level** (school × cohort × side).
 
 ## Where to look
+- **`COMPLETENESS.md`** - authoritative per-cohort data completeness across the four
+  data families (pre/post scores, gov scores, EOY status, college tracking), with the
+  source file for each and the confirmed gaps to raise with LFF. **Start here for "what
+  data do we have."**
 - **`CANDIDATES.md`** - a tentative list of which file is essential (canonical
-  source) vs. supplementary, per cohort × level. **Start here.**
+  source) vs. supplementary, per cohort × level.
 - **`provenance_flagged.csv`** - every file with its source, hash, per-sheet row counts,
   and a `master_doc_candidate` TRUE/FALSE flag.
+- **`data_completeness_audit.xlsx`** / **`audit_completeness.py`** - the reproducible
+  audit (per-file column detection + fill rates, incl. eligible-only college metric) that
+  `COMPLETENESS.md` is built from.
 - **`_shared/canonical_mapping_v2.txt`** - working school-name crosswalk (crosswalk = standardized mapping). Needs confirmation from LFF.
 - **`school_name_crosswalk_REVIEW.xlsx`** - working crosswalk (full classification + review queue).
 
@@ -19,23 +26,26 @@ CohortN/CM1/sources   CohortN/CM2/sources   CohortN/CM2/built   _built/   _share
 Each canonical file is also kept under its original LFF filename for provenance;
 `provenance_flagged.csv` ties the two together by hash.
 
-## Completeness for master reconstruction (C4–C7)
+## Completeness summary
 
-| Cohort | CM1 | CM2 | Notes |
-|--------|-----|-----|-------|
-| **C4** (2021–22) |  complete | complete | Marcus files; CM2 has baseline+endline, CFEPD compositions, 3 EOY years, +4 extra control schools. |
-| **C5** (2022–23, pilot) | complete | complete | Saé Saboua pilot; EOY + college tracking verified. |
-| **C6** (2023–24) | Missing Pre-Post Test | Patrial Coverage for Pre-Post Test (~40%) | CM2 is a *set* of per-commune files (never consolidated). See gap below. |
-| **C7** (2024–25) | complete | complete | Zero schools missing. |
+Full detail, per cohort × level × side, is in **`COMPLETENESS.md`** (the single source of
+truth — do not duplicate its table here). In brief:
 
-**At school level, dropout / CFEPD-pass / secondary-enrollment outcomes are available for all of C4–C7 (minus the C6 school gap below). Math & French score outcomes are the exception for C6. CM2 control and cohort-wide CM1 pre/post are absent (see gap list).**
+- **Dropout / CFEPD-pass / secondary-enrollment (EOY + college)** outcomes are available
+  across C4–C7 at school level. College tracking, measured among transition-eligible girls
+  (EOY = passe/admis), is complete or near-complete everywhere (apparent low raw fill was
+  girls who did not transition).
+- **Pre/Post test scores** are complete for C4, C5, C7; the exception is **C6** —
+  intervention CM2 only, with control CM2 absent and CM1 cohort-wide only ~40% covered.
+- **Gov scores** are present everywhere as at least the annual average; several files also
+  carry the per-term breakdown. Some required pulling from sibling files (e.g. C5 CM1
+  EXAMENS, C7 CM1 Resultats, C7 CM2 consolidated).
 
-## Remaining data gap (the LFF ask)
-- **C6 control schools with no data in any file:** Safo Chadaoua, Radi Centre 1,
-  Radi Centre 2, Radi Quartier (Safo); Karambi Saboua (Saé Saboua).
-- **C6 CM2 missing** for Soura Saraki and Maza Tsaye 2 (CM1 found, CM2 not).
-- **C6 CM1 pre/post test** 
-- **C7:** none outstanding thanks to recent dataset update provided by Sarah. 
+**Confirmed gaps for the LFF / Inspection visit** (see `COMPLETENESS.md` for the full list
+and phrasing): C6 CM2 control pre/post (confirmed absent); C6 CM1 cohort-wide pre/post
+(~40%); C4 CM2 college for the **Tarna** schools; C6 control schools with no data (Safo
+Chadaoua, Radi Centre 1/2/Quartier, Karambi Saboua) and C6 CM2 missing for Soura Saraki &
+Maza Tsaye 2; school-name confirmations; and the Kalgon Waraou pairing.
 
 ## School-name standardization
 - Tentative crosswalk: **`_shared/canonical_mapping_v2.txt`** (167 variant→canonical
@@ -55,7 +65,7 @@ Each canonical file is also kept under its original LFF filename for provenance;
   `CM1 & CM2 Metrics` tab with school-level counts usable directly.
 - **C6 matching:** `C6_CM2_PairMatching_OFFICIAL_MarcusZip.xlsx` is a real LFF doc
   ("Matching des écoles pour cohorte 6, 2023-2024"). Placeholder for *pairing* until further verification/confirmation from LFF; use
-  source files for canonical spelling. (`_PROXY` retained as backup only.). 
+  source files for canonical spelling. (`_PROXY` retained as backup only.).
   *Note:* LFF flagged a possible pairing error (Kalgon Waraou) — pairings pending correction.
 - **C7 CM1 canonical:** drop footer rows lacking a `groupIC2` value (SD/count summaries).
 - **Known defects:** C4 CM2 control sheets carry `#VALEUR!` in `Moyenne générale`
@@ -64,5 +74,4 @@ Each canonical file is also kept under its original LFF filename for provenance;
 
   **ALL MATCHING/PAIRING DOCS AWAITING VERIFICATION FROM LFF**
 
-*Last updated after full header-inventory verification of all repo files and the
-school-name standardization pass.*
+*Last updated after the data-completeness audit and the school-name standardization pass.*
