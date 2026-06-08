@@ -28,8 +28,7 @@ Each canonical file is also kept under its original LFF filename for provenance;
 
 ## Completeness summary
 
-Full detail, per cohort × level × side, is in **`COMPLETENESS.md`** (the single source of
-truth — do not duplicate its table here). In brief:
+Full detail, per cohort × level × side, is in **`COMPLETENESS.md`** In brief:
 
 - **Dropout / CFEPD-pass / secondary-enrollment (EOY + college)** outcomes are available
   across C4–C7 at school level. College tracking, measured among transition-eligible girls
