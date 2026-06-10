@@ -102,6 +102,11 @@ C6 intervention CM2. The genuine, potentially-recoverable gaps are few — see t
   aggregate tab at 100%** giving school-level inscrites / présentes / admises / abandon —
   directly usable for dropout & pass rates. **Pre/Post test scores: intervention only
   (`C6_CM2_Interv_Pre_Post_TestScores`, 99%); control pre/post absent.**
+  Three control schools initially thought missing are supplied by additional IEPP files
+  now in the repo: `C6_IEPP_Tibiri_1_Controle_Interv` (Maisso, Garin Daouré 2 — CM1+CM2,
+  gov scores + Situation finale), `C6_IEP_Sae_Saboua_2025` (Karhin Hali — CM1+CM2), and
+  `C6_IEPP_Tibiri_2_Controle_Interv` (Soura Saraki, Maza Tsayé 2 — CM1 only; their CM2 is
+  the remaining gap).
 
 ### Cohort 7
 - **CM1** — `C7_CM1_TX_CTRL_prepost_status_CANONICAL`: pre/post 100% both arms
@@ -135,9 +140,26 @@ after CM2) and are excluded below. The genuine gaps:
    schools are the exception: 54 eligible Tarna girls have no college data.** Was
    secondary follow-up done for the Tarna schools in 2021–22?
 
-4. **C6 control schools missing entirely** (no data in any file): Safo Chadaoua, Radi
-   Centre 1, Radi Centre 2, Radi Quartier (Safo); Karambi Saboua (Saé Saboua). Plus C6 CM2
-   missing for Soura Saraki and Maza Tsaye 2.
+4. **C6 control schools — missing data** (verified against the C6 pairing doc, names
+   canonicalized, and cross-checked against the "SAFO complete" and Saé Saboua control
+   files). Three kinds of issue:
+   - **Fully absent — no data in any file (4 schools, all Safo commune):** Safo Chadaoua,
+     Radi Centre 1, Radi Centre 2, Radi Quartier. *These require retrieval from LFF / the
+     Inspections.* (Confirmed not present in the "SAFO complete LFF" files, which cover a
+     different set: Maradou Centre, Safo Dan Ali, Safo Nassaraoua, Tchikadji Centre.)
+   - **CM2 missing, CM1 found (2 schools, Tibiri):** Soura Saraki, Maza Tsayé 2 — their CM1
+     data is in `IEPP Tibiri 2`, but CM2 was not collected/found. Do C6 CM2 records exist?
+   - **Spelling to confirm (1 school):** the pairing doc lists **Karambi Saboua**, but the
+     Saé Saboua control data contains **Karambi Sofoua**. Is Karambi Saboua the *same school*
+     as Karambi Sofoua (in which case it is not missing — we have its data), or a *distinct*
+     school (in which case we have no Karambi Saboua data)?
+
+   *Reconciliation note:* an earlier audit flagged ~10 missing C6 control schools. Five were
+   subsequently located in commune IEPP files: **Maisso** and **Garin Daouré 2** (CM1+CM2 in
+   `IEPP Tibiri 1`) and **Karhin Hali** (CM1+CM2 in `IEP Sae Saboua 2025`) are recovered and
+   now in the repo; **Soura Saraki** and **Maza Tsayé 2** were found at CM1 only (above). That
+   leaves the 4 fully-absent Safo schools + 2 CM2-only gaps + the Karambi spelling question.
+   (`Kontagora Tsofoua` = `Kontagora Sofoua`, a spelling variant, is present — not a gap.)
 
 5. **School-name confirmations** (from standardization; see `canonical_mapping_v2.txt`):
    Danja / Dan Fillo / Takalmaoua bare numbers; Kountarou vs Kountarou Mairairai;
