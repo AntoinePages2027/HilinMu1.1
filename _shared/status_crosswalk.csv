@@ -1,0 +1,158 @@
+family,raw_value,canonical_status,notes
+# ============================================================================
+# Hilin Mu STATUS CROSSWALK — finalized from inventory + Antoine's eye-check of
+# the C4 Marcus master candidate (BJ col / "Colonne2"). Variants merged, distinct
+# outcomes preserved. C6 is NOT here — its rates come from the CM1 & CM2 Metrics
+# aggregate tabs, not girl-level status.
+#
+# EOY canonical categories:
+#   PASSED_EXAM            passed CFEPD / promoted, eligible for secondary (Admise=Passante)
+#   TRANSITIONED_SECONDARY actually enrolled/oriented to secondary (6e/CEG/CFM/CET)
+#   REPEATED               repeated the grade (incl. demotion back to CM1)
+#   DROPOUT                left school (abandon, incl. married-dropout)
+#   EXCLUDED               involuntarily removed (exclue)
+#   ELIGIBILITY_EXHAUSTED  repeated too many times -> forced out (scolarité épuisée) [own category]
+#   DECEASED               died
+#   INVALID                non-status junk (commune names, numbers, formula debris) -> excluded
+#
+# NOTE: PASSED_EXAM (passed/eligible) and TRANSITIONED_SECONDARY (actually enrolled)
+# are DISTINCT steps and feed two different target outcomes (CFEPD-pass rate vs
+# secondary-enrollment rate). Do not merge.
+# RULE: any purely-numeric status cell -> INVALID (row-index/ID/rate-formula columns).
+# ============================================================================
+# ----- PASSED_EXAM (Admise = Passante, per eye-check) -----
+EOY_Status,Admise,PASSED_EXAM,passed gov exam / eligible for 6e (= Passante)
+EOY_Status,admise,PASSED_EXAM,case variant
+EOY_Status,Passante,PASSED_EXAM,= Admise per eye-check
+EOY_Status,passante,PASSED_EXAM,case variant
+EOY_Status,Passe,PASSED_EXAM,
+EOY_Status,Passe au CM2,PASSED_EXAM,promoted within primary (still passed/eligible)
+EOY_Status,Inscrite en CM2,PASSED_EXAM,enrolled next year = passed
+EOY_Status,Inscrite en C M 2,PASSED_EXAM,spacing variant
+EOY_Status,Inscrite en CM 2,PASSED_EXAM,spacing variant
+EOY_Status,Insrcite en CM 2,PASSED_EXAM,typo variant
+EOY_Status,Insrcite en CM2,PASSED_EXAM,typo variant
+EOY_Status,Insrcitre en CM 2,PASSED_EXAM,typo variant
+EOY_Status,Inscrite,PASSED_EXAM,short form
+# ----- TRANSITIONED_SECONDARY (actually enrolled/oriented) -----
+EOY_Status,Passe en 6e,TRANSITIONED_SECONDARY,enrolled in 6e (first secondary year)
+EOY_Status,Admise CEG,TRANSITIONED_SECONDARY,admitted to CEG (C7 vocabulary)
+EOY_Status,CEG,TRANSITIONED_SECONDARY,Collège d'Enseignement Général
+EOY_Status,Passe au CEG,TRANSITIONED_SECONDARY,
+EOY_Status,Orientée CEG,TRANSITIONED_SECONDARY,
+EOY_Status,Orientée   CEG,TRANSITIONED_SECONDARY,spacing variant
+EOY_Status,CFM,TRANSITIONED_SECONDARY,Centre de Formation aux Métiers
+EOY_Status,Orientée CFM,TRANSITIONED_SECONDARY,
+EOY_Status,Proposée CFM,TRANSITIONED_SECONDARY,
+EOY_Status,Passe au CFM,TRANSITIONED_SECONDARY,
+EOY_Status,Transferé au CFM,TRANSITIONED_SECONDARY,
+EOY_Status,Transferée au CFM,TRANSITIONED_SECONDARY,
+EOY_Status,CET,TRANSITIONED_SECONDARY,Collège d'Enseignement Technique
+EOY_Status,Transféré  au CET,TRANSITIONED_SECONDARY,
+EOY_Status,Transferée au CET,TRANSITIONED_SECONDARY,
+EOY_Status,Transférée au CET,TRANSITIONED_SECONDARY,
+EOY_Status,Transferé,TRANSITIONED_SECONDARY,transferred to secondary (sometimes unspecified)
+EOY_Status,Transféré,TRANSITIONED_SECONDARY,
+EOY_Status,Transférée,TRANSITIONED_SECONDARY,
+EOY_Status,Transferée,TRANSITIONED_SECONDARY,
+EOY_Status,Transferee,TRANSITIONED_SECONDARY,
+EOY_Status,Trasférée,TRANSITIONED_SECONDARY,typo variant
+EOY_Status,"Transférée cf,",TRANSITIONED_SECONDARY,truncated cfm
+EOY_Status,"Transférée CFM,",TRANSITIONED_SECONDARY,
+# ----- REPEATED (incl. demotion to CM1) -----
+EOY_Status,Redouble,REPEATED,
+EOY_Status,redouble,REPEATED,case variant
+EOY_Status,Redoublante,REPEATED,
+EOY_Status,Rédoublante,REPEATED,accent variant
+EOY_Status,Rédouble,REPEATED,accent variant
+EOY_Status,Rédoublte,REPEATED,typo variant
+EOY_Status,Redouble le CM2,REPEATED,
+EOY_Status,Redouble CM2,REPEATED,
+EOY_Status,Redouble le CM1,REPEATED,
+EOY_Status,Redouble le CM3,REPEATED,
+EOY_Status,Elle reprend la classe de CM2,REPEATED,
+EOY_Status,Elle reprend la classe C M 2,REPEATED,spacing variant
+EOY_Status,Elle avait redouble CM2,REPEATED,
+EOY_Status,Elle avait redouble C M 2,REPEATED,spacing variant
+EOY_Status,Elle avait redouble  C M 2,REPEATED,spacing variant
+EOY_Status,CM1,REPEATED,demoted back to CM1 (per eye-check) — not junk
+EOY_Status,Retourné au CM1,REPEATED,sent back to CM1 = demotion
+# ----- DROPOUT -----
+EOY_Status,Abandon,DROPOUT,
+EOY_Status,Abondon,DROPOUT,typo variant
+EOY_Status,Abonde,DROPOUT,typo variant (per eye-check)
+EOY_Status,Abondonte,DROPOUT,typo variant
+EOY_Status,Abondante,DROPOUT,typo variant
+EOY_Status,Mariée Abandon,DROPOUT,married-dropout (cause noted; category DROPOUT)
+EOY_Status,Non inscrite Mariée (Abandon),DROPOUT,
+EOY_Status,Elle avait redouble CM2(Abandonne ),DROPOUT,terminal state dropout
+# ----- EXCLUDED -----
+EOY_Status,Exclue,EXCLUDED,involuntary removal
+EOY_Status,Exclu,EXCLUDED,variant
+EOY_Status,exclue,EXCLUDED,case variant
+EOY_Status,Exclue pour Abandon,EXCLUDED,revisit when defining dropout rate
+EOY_Status,Exclue pour abandon,EXCLUDED,case variant
+EOY_Status,Elève cedée,EXCLUDED,student ceded/transferred out by school
+# ----- ELIGIBILITY_EXHAUSTED (own category, per decision) -----
+EOY_Status,Scolarité épuisée,ELIGIBILITY_EXHAUSTED,repeated too many times -> forced out
+EOY_Status,Scolaritée epuisée,ELIGIBILITY_EXHAUSTED,typo variant
+EOY_Status,Scolarité épuisée depuis 2021,ELIGIBILITY_EXHAUSTED,
+EOY_Status,Scolarite épuisée depuis 2021,ELIGIBILITY_EXHAUSTED,accent variant
+# ----- DECEASED -----
+EOY_Status,Décédée,DECEASED,
+# ----- INVALID (non-status; excluded from rates) -----
+EOY_Status,Saé Saboua,INVALID,commune-name bleed (C7 college file mis-detected col)
+EOY_Status,Tibiri 1,INVALID,commune bleed
+EOY_Status,Tibiri 2,INVALID,commune bleed
+EOY_Status,Djirataoua,INVALID,commune bleed
+EOY_Status,Safo,INVALID,commune bleed
+EOY_Status,Column6,INVALID,header artifact
+EOY_Status,Colonne5,INVALID,header artifact
+EOY_Status,Observation,INVALID,header label
+EOY_Status,CM2,INVALID,grade label (not a status here; cf CM1=demotion)
+EOY_Status,Numerateur:,INVALID,formula debris
+EOY_Status,demoninateur:,INVALID,formula debris
+EOY_Status,pourcentage reussi (taux de reussite),INVALID,formula debris
+EOY_Status,toutes les filles inscrites et presentes dans CEG/l'ecole secondaire,INVALID,definition text
+EOY_Status,toutes les filles admises a l'examen de CFEPD,INVALID,definition text
+EOY_Status,Nombre d'abandon,INVALID,summary label
+EOY_Status,?,INVALID,placeholder
+EOY_Status,??????,INVALID,placeholder
+EOY_Status,?????????,INVALID,placeholder
+EOY_Status,???,INVALID,placeholder
+# ============================================================================
+# COLLEGE TRACKING — ENROLLED_SECONDARY | NOT_TRANSITIONED | INVALID
+# ============================================================================
+College_Tracking,Passe en 6e,ENROLLED_SECONDARY,
+College_Tracking,Inscrite au CEG,ENROLLED_SECONDARY,
+College_Tracking,Actuellement au college,ENROLLED_SECONDARY,
+College_Tracking,Inscrite,ENROLLED_SECONDARY,
+College_Tracking,Orientée CFM,ENROLLED_SECONDARY,
+College_Tracking,Orientée CEG,ENROLLED_SECONDARY,
+College_Tracking,Orientée   CEG,ENROLLED_SECONDARY,spacing variant
+College_Tracking,Proposée CFM,ENROLLED_SECONDARY,
+College_Tracking,CEG,ENROLLED_SECONDARY,
+College_Tracking,CFM,ENROLLED_SECONDARY,
+College_Tracking,CET,ENROLLED_SECONDARY,
+College_Tracking,Transféré,ENROLLED_SECONDARY,
+College_Tracking,Transférée,ENROLLED_SECONDARY,
+College_Tracking,Transferée,ENROLLED_SECONDARY,
+College_Tracking,Trasférée,ENROLLED_SECONDARY,typo
+College_Tracking,Transféré  au CET,ENROLLED_SECONDARY,
+College_Tracking,Redouble,NOT_TRANSITIONED,repeated primary — did not transition
+College_Tracking,Abandon,NOT_TRANSITIONED,dropped out — did not transition
+College_Tracking,Exode,NOT_TRANSITIONED,migrated away
+College_Tracking,Mariée Abandon,NOT_TRANSITIONED,
+College_Tracking,Non inscrite Mariée (Abandon),NOT_TRANSITIONED,
+College_Tracking,Exclue pour Abandon,NOT_TRANSITIONED,
+College_Tracking,Retourné au CM1,NOT_TRANSITIONED,
+College_Tracking,?,INVALID,placeholder
+College_Tracking,??????,INVALID,placeholder
+College_Tracking,?????????,INVALID,placeholder
+College_Tracking,???,INVALID,placeholder
+College_Tracking,CM2,INVALID,grade label
+College_Tracking,Numerateur:,INVALID,formula debris
+College_Tracking,demoninateur:,INVALID,formula debris
+College_Tracking,pourcentage reussi (taux de reussite),INVALID,formula debris
+College_Tracking,toutes les filles inscrites et presentes dans CEG/l'ecole secondaire,INVALID,definition text
+College_Tracking,toutes les filles admises a l'examen de CFEPD,INVALID,definition text
