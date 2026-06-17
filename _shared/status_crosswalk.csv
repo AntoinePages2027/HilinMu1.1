@@ -13,6 +13,8 @@ family,raw_value,canonical_status,notes
 #   EXCLUDED               involuntarily removed (exclue)
 #   ELIGIBILITY_EXHAUSTED  repeated too many times -> forced out (scolarité épuisée) [own category]
 #   DECEASED               died
+#   TRANSFERRED_CFM        vocational track (CFM) — distinct from secondary (6e/CEG/CET)
+#   REVIEW_NEEDED          ambiguous values needing investigation (e.g. CM1 for CM2 girls)
 #   INVALID                non-status junk (commune names, numbers, formula debris) -> excluded
 #
 # NOTE: PASSED_EXAM (passed/eligible) and TRANSITIONED_SECONDARY (actually enrolled)
@@ -26,8 +28,8 @@ EOY_Status,admise,PASSED_EXAM,case variant
 EOY_Status,Passante,PASSED_EXAM,= Admise per eye-check
 EOY_Status,passante,PASSED_EXAM,case variant
 EOY_Status,Passe,PASSED_EXAM,
-EOY_Status,Passe au CM2,PASSED_EXAM,promoted within primary (still passed/eligible)
-EOY_Status,Inscrite en CM2,PASSED_EXAM,enrolled next year = passed
+EOY_Status,Passe au CM2,PASSED_EXAM,CM1 EOY status only (promoted to CM2); should not appear for CM2 girls
+EOY_Status,Inscrite en CM2,PASSED_EXAM,CM1 EOY status only (enrolled in CM2 next year)
 EOY_Status,Inscrite en C M 2,PASSED_EXAM,spacing variant
 EOY_Status,Inscrite en CM 2,PASSED_EXAM,spacing variant
 EOY_Status,Insrcite en CM 2,PASSED_EXAM,typo variant
@@ -36,18 +38,18 @@ EOY_Status,Insrcitre en CM 2,PASSED_EXAM,typo variant
 EOY_Status,Inscrite,PASSED_EXAM,short form
 # ----- TRANSITIONED_SECONDARY (actually enrolled/oriented) -----
 EOY_Status,Passe en 6e,TRANSITIONED_SECONDARY,enrolled in 6e (first secondary year)
-EOY_Status,Admise CEG,TRANSITIONED_SECONDARY,admitted to CEG (C7 vocabulary)
+EOY_Status,Admise CEG,PASSED_EXAM,admitted to CEG = passed exam (C7 EOY vocabulary)
 EOY_Status,CEG,TRANSITIONED_SECONDARY,Collège d'Enseignement Général
 EOY_Status,Passe au CEG,TRANSITIONED_SECONDARY,
 EOY_Status,Orientée CEG,TRANSITIONED_SECONDARY,
 EOY_Status,Orientée   CEG,TRANSITIONED_SECONDARY,spacing variant
-EOY_Status,CFM,TRANSITIONED_SECONDARY,Centre de Formation aux Métiers
-EOY_Status,Orientée CFM,TRANSITIONED_SECONDARY,
-EOY_Status,Proposée CFM,TRANSITIONED_SECONDARY,
-EOY_Status,Passe au CFM,TRANSITIONED_SECONDARY,
-EOY_Status,Transferé au CFM,TRANSITIONED_SECONDARY,
-EOY_Status,Transferée au CFM,TRANSITIONED_SECONDARY,
-EOY_Status,CET,TRANSITIONED_SECONDARY,Collège d'Enseignement Technique
+EOY_Status,CFM,TRANSFERRED_CFM,vocational track (Centre de Formation aux Métiers) — distinct from 6e
+EOY_Status,Orientée CFM,TRANSFERRED_CFM,
+EOY_Status,Proposée CFM,TRANSFERRED_CFM,
+EOY_Status,Passe au CFM,TRANSFERRED_CFM,
+EOY_Status,Transferé au CFM,TRANSFERRED_CFM,
+EOY_Status,Transferée au CFM,TRANSFERRED_CFM,
+EOY_Status,CET,PASSED_EXAM,admitted to CET (EOY = exam outcome not enrollment)
 EOY_Status,Transféré  au CET,TRANSITIONED_SECONDARY,
 EOY_Status,Transferée au CET,TRANSITIONED_SECONDARY,
 EOY_Status,Transférée au CET,TRANSITIONED_SECONDARY,
@@ -57,8 +59,8 @@ EOY_Status,Transférée,TRANSFERRED,bare transfer — destination unknown
 EOY_Status,Transferée,TRANSFERRED,bare transfer — destination unknown
 EOY_Status,Transferee,TRANSFERRED,bare transfer — destination unknown
 EOY_Status,Trasférée,TRANSFERRED,bare transfer typo — destination unknown
-EOY_Status,"Transférée cf,",TRANSITIONED_SECONDARY,truncated cfm
-EOY_Status,"Transférée CFM,",TRANSITIONED_SECONDARY,
+EOY_Status,"Transférée cf,",TRANSFERRED_CFM,truncated cfm
+EOY_Status,"Transférée CFM,",TRANSFERRED_CFM,
 # ----- REPEATED (incl. demotion to CM1) -----
 EOY_Status,Redouble,REPEATED,
 EOY_Status,redouble,REPEATED,case variant
@@ -75,7 +77,7 @@ EOY_Status,Elle reprend la classe C M 2,REPEATED,spacing variant
 EOY_Status,Elle avait redouble CM2,REPEATED,
 EOY_Status,Elle avait redouble C M 2,REPEATED,spacing variant
 EOY_Status,Elle avait redouble  C M 2,REPEATED,spacing variant
-EOY_Status,CM1,REPEATED,demoted back to CM1 (per eye-check) — not junk
+EOY_Status,CM1,REVIEW_NEEDED,no retrogradation per LFF — unclear what this means for CM2 girls; investigate
 EOY_Status,Retourné au CM1,REPEATED,sent back to CM1 = demotion
 # ----- DROPOUT -----
 EOY_Status,Abandon,DROPOUT,
@@ -128,12 +130,12 @@ College_Tracking,Passe en 6e,ENROLLED_SECONDARY,
 College_Tracking,Inscrite au CEG,ENROLLED_SECONDARY,
 College_Tracking,Actuellement au college,ENROLLED_SECONDARY,
 College_Tracking,Inscrite,ENROLLED_SECONDARY,
-College_Tracking,Orientée CFM,ENROLLED_SECONDARY,
+College_Tracking,Orientée CFM,TRANSFERRED_CFM,
 College_Tracking,Orientée CEG,ENROLLED_SECONDARY,
 College_Tracking,Orientée   CEG,ENROLLED_SECONDARY,spacing variant
-College_Tracking,Proposée CFM,ENROLLED_SECONDARY,
+College_Tracking,Proposée CFM,TRANSFERRED_CFM,
 College_Tracking,CEG,ENROLLED_SECONDARY,
-College_Tracking,CFM,ENROLLED_SECONDARY,
+College_Tracking,CFM,TRANSFERRED_CFM,vocational track — not same as CEG enrollment
 College_Tracking,CET,ENROLLED_SECONDARY,
 College_Tracking,Transféré,TRANSFERRED,bare transfer — destination unknown
 College_Tracking,Transférée,TRANSFERRED,bare transfer — destination unknown
@@ -142,7 +144,7 @@ College_Tracking,Trasférée,TRANSFERRED,bare transfer typo — destination unkn
 College_Tracking,Transféré  au CET,ENROLLED_SECONDARY,
 College_Tracking,Redouble,NOT_TRANSITIONED,repeated primary — did not transition
 College_Tracking,Abandon,NOT_TRANSITIONED,dropped out — did not transition
-College_Tracking,Exode,NOT_TRANSITIONED,migrated away
+College_Tracking,Exode,NOT_TRANSITIONED,left the country to earn money (Hausa: exode)
 College_Tracking,Mariée Abandon,NOT_TRANSITIONED,
 College_Tracking,Non inscrite Mariée (Abandon),NOT_TRANSITIONED,
 College_Tracking,Exclue pour Abandon,NOT_TRANSITIONED,
