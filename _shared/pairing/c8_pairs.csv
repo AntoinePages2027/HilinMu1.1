@@ -1,0 +1,51 @@
+pair_id,commune,int_school,ctrl_school,niveau,int_in_data,ctrl_in_data
+C8-01,Djirataoua,Takalmaoua 1,Kontagora Sofoua,both,True,True
+C8-02,Djirataoua,Sabon Gari Kolta,Galadantchi,both,True,True
+C8-03,Djirataoua,Danja 1,Djirataoua Bilingue,both,True,True
+C8-04,Djirataoua,Danja 2,Kontagora Goussaoua,both,True,True
+C8-05,Djirataoua,Koderaoua,Oumarou Laouali Gago,both,True,True
+C8-06,Djirataoua,Takalmaoua 2,Tajaye Djirataoua,both,True,True
+C8-07,Safo,Safo Nassaraoua,Radi Centre 2,both,True,True
+C8-08,Safo,Tchikadji Centre,Radi Centre 1,both,True,True
+C8-09,Safo,Maradou Centre,Radi Quartier,both,True,True
+C8-10,Safo,Safo El Mougou,Gade,both,True,True
+C8-11,Safo,Tchikadji Quartier,Soumarana,both,True,True
+C8-12,Safo,Safo Quartier,Safo Chadaoua,both,True,True
+C8-13,Tibiri,Garin Yari Idi,Maza Tsaye 1,both,True,True
+C8-14,Tibiri,Katare 1,Kara Kara 3,both,True,True
+C8-15,Tibiri,Katare 2,Kara Kara 1,both,True,True
+C8-16,Tibiri,Dan Fillo 3,Kara Kara 2,both,True,True
+C8-17,Tibiri,Soura 1,Maza Tsaye 2,both,True,True
+C8-18,Tibiri,Soura 2,Garin Magaji,both,True,True
+C8-19,Tibiri,Soura 3,Yan Zango,both,True,True
+C8-20,Tibiri,Soura Sarkin Galma 1,Imbelbelou 3,both,True,True
+C8-21,Tibiri,Soura Sarkin Galma 2,Sarkin Aski,both,True,True
+C8-22,Tibiri,Soura Magaji Rogo,Maisso,both,True,True
+C8-23,Tibiri,Waraou,Garin Daoure 2,both,True,True
+C8-24,Tibiri,Tibiri Nord 3,Garin Daoure 1,both,True,True
+C8-25,Tibiri,Soura Saraki,Garin Malam Hamza,both,True,True
+C8-26,Sae Saboua,Barouana,Dan Gara,both,True,True
+C8-27,Sae Saboua,Dan Gamji (Sae Saboua),Dan Bako,both,True,True
+C8-28,Sae Saboua,Kadata,Karhin Hali,both,True,True
+C8-29,Sae Saboua,Kadigaoua,Tsanna Publique,CM1,True,True
+C8-30,Sae Saboua,Louloubi,Karambi Saboua,both,True,True
+C8-31,Sae Saboua,Mallamai Saboua,Yan Doto Garin Malam,both,True,True
+C8-32,Sae Saboua,Mountarou Barmo,Alssaoua,both,True,True
+C8-33,Sae Saboua,Sae Saboua,Mallamai Salifou,CM2,True,True
+C8-34,Sae Saboua,Oubandawaki Alfacha,Karambi Sofoua,both,True,True
+C8-35,Sae Saboua,Tagaza,Yan Doto Bala,both,True,True
+C8-36,Sae Saboua,Gadambo,Gagadama,both,True,True
+C8-37,Sae Saboua,Garin Bouwey,Tchido,both,True,True
+C8-38,Sae Saboua,Mountarou 1,Mata Milki,both,True,True
+C8-39,Tchadoua,Gawaro,Wakasso,both,True,True
+C8-40,Tchadoua,Jan Ruwa Sedentaire,Zabon Mousso,both,True,True
+C8-41,Tchadoua,Zangon Narouwa,Guidan Tambari,CM2,True,True
+C8-42,Tchadoua,Tawalala,Magami,both,True,True
+C8-43,Tchadoua,Maijanguero,Dan Bouzou,both,True,True
+C8-44,Tchadoua,Dan Gamji (Tchadoua),Dan Toumbi,CM2,True,True
+C8-45,Tchadoua,Dan Aicha,Guidan Dan Galdima,both,True,True
+C8-46,Tchadoua,Guidan Karma,Guidan Zoudi,CM2,True,True
+C8-47,Tchadoua,Guidan Magagi,Bini,CM2,True,True
+C8-48,Tchadoua,Guidan Moussa,Algafia/Kotsi,CM2,True,True
+C8-49,Tchadoua,Kouran Mota,Chapke,CM2,True,True
+C8-50,Tchadoua,Douma 1,Guidan Koube,both,True,True

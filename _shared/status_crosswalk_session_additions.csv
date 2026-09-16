@@ -1,0 +1,10 @@
+# Status crosswalk additions — July 2026 session
+# Append these to status_crosswalk.csv (family,raw_value,canonical_status,notes)
+EOY_Status,Decedée,DECEASED,typo variant (C5/C6)
+EOY_Status,Redouble au CM1,REPEATED,C6 CM1 EOY
+EOY_Status,rédble le CM1,REPEATED,C6 CM1 EOY abbreviation
+EOY_Status,Passse,PASSED_EXAM,C8 commune file typo
+EOY_Status,Passe au CM2,PASSED_EXAM,C8 CM1 EOY (promotion to CM2)
+EOY_Status,Passante,PASSED_EXAM,C8 commune file variant
+EOY_Status,CET,TRANSFERRED_CFM,C8 vocational (Centre d'Enseignement Technique)
+College_Tracking,Elle reprend la classe du CM2,NOT_TRANSITIONED,C4 Base Suivi 6e (2 girls)

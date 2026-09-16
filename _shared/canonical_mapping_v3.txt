@@ -1,0 +1,221 @@
+# School Name Canonical Mappings — v2 (FINAL, this session)
+# 167 variant->canonical mappings; 80 distinct canonicals.
+# Maza Tsaye (no 'n'), Kontagora (not Kantagora/Kountagora) — confirmed.
+# Numbers preserved; roman numerals normalized to arabic (I->1, II->2, III->3).
+# Radi (not Riadi); Dan Gamji; Alssaoua; Tchikadji; Garin Magaji per review.
+#
+# === PENDING LFF CONFIRMATION (not merged / to verify) ===
+#   - Danja (bare, no number) — which sibling, Danja 1 or 2? LFF/roster
+#   - Dan Fillo (bare) — assumed Dan Fillo 3 (only Dan Fillo in canon) but unconfirmed; LFF
+#   - Kountarou (bare) — distinct? or Kountarou Mairairai? NOT Mountarou. LFF/roster
+#   - Kontagora Sofoua vs Kontagora Tsohoua — possibly same; LFF confirm
+#   - Takalmaoua bare — which number? LFF/roster
+#   - M.Saboua assumed = Mallamai Saboua (not Salifou); LFF confirm
+#   - Katare (bare, C6 doc) — maps to Katare Guidan Ousmane 1 or 2? roster confirm (kept DISTINCT for now)
+#
+Alsaoua -> Alssaoua
+Alsawa -> Alssaoua
+Atchidakofotato Bilingue -> Atchidakofoto Bilingue
+Atchidakofoto bilingue -> Atchidakofoto Bilingue
+Basaraoua -> Bassaraoua
+Bassaraou -> Bassaraoua
+bassaraoua -> Bassaraoua
+de Bassaraou -> Bassaraoua
+Ecole de Bassaraou -> Bassaraoua
+Chapké -> Chapke
+Ecole Dallia -> Dallia
+Tibiri Dan Fillo 3 -> Dan Fillo 3
+Tibiri dan Fillo III -> Dan Fillo 3
+Dan Gamdji -> Dan Gamji
+Dan Kari Trad -> Dan Kari
+Ecole Dan Kari -> Dan Kari
+Dandja 1 -> Danja 1
+Danja I -> Danja 1
+Dandja 2 -> Danja 2
+Danja II -> Danja 2
+Bilingue Djirataoaua -> Djirataoua Bilingue
+Djiratawa Bilingue -> Djirataoua Bilingue
+Ecole Djirataoua Bilingue -> Djirataoua Bilingue
+Elkokia -> El Kokia
+Gadé -> Gade
+Gad√© -> Gade
+Kadé -> Gade
+Kagadama -> Gagadama
+ECOLE GALADANTCHI -> Galadantchi
+Galadanci -> Galadantchi
+GALADANTCHI -> Galadantchi
+Garin Barmo -> Garin Bormo
+Garin Daouré -> Garin Daoure 1
+Garin Daouré 1 -> Garin Daoure 1
+Garin Daouré I -> Garin Daoure 1
+Garin Daouré 2 -> Garin Daoure 2
+Garin Daouré II -> Garin Daoure 2
+Garin Daoure2 -> Garin Daoure 2
+GARN DAOURE 2 -> Garin Daoure 2
+Garin Madjé -> Garin Magaji
+Garin Madji -> Garin Magaji
+Garin Magé -> Garin Magaji
+Garin Malan Hamza -> Garin Malam Hamza
+Garin Yara Idi -> Garin Yari Idi
+Yari Idi -> Garin Yari Idi
+Guidan Koubé -> Guidan Koube
+Guigamaoua -> Guigamaoua Sofoua
+Guigamawa Sofoua -> Guigamaoua Sofoua
+Imbelbelou III -> Imbelbelou 3
+Yan Belbelou 3 -> Imbelbelou 3
+Jan Ruwa Sédentaire -> Jan Ruwa Sedentaire
+Gadigaoua -> Kadigaoua
+Kadigawa -> Kadigaoua
+KAGARA -> Kagara
+Kalgon waraou -> Kalgon Waraou
+Kankara Safo -> Kankaran Safo
+KANKARAN  Safo -> Kankaran Safo
+Kankaren Safo -> Kankaran Safo
+Kara kara I -> Kara Kara 1
+Karakara 1 -> Kara Kara 1
+Karkara 1 -> Kara Kara 1
+Kara kara 2 -> Kara Kara 2
+Kara kara II -> Kara Kara 2
+Kara-Kara 2 -> Kara Kara 2
+Karakara 2 -> Kara Kara 2
+Kara Kara   3 -> Kara Kara 3
+Kara kara III -> Kara Kara 3
+Karakara 3 -> Kara Kara 3
+Karambi Tsofoua -> Karambi Sofoua
+Karanbi Sofoua -> Karambi Sofoua
+Karhi Hali -> Karhin Hali
+Kataré 1 -> Katare 1
+Kataré 2 -> Katare 2
+KATARE GUIDAN OUSMAN 1 -> Katare Guidan Ousmane 1
+Kataré Guidan Ousman I -> Katare Guidan Ousmane 1
+KATARE GUIDAN OUSMAN 2 -> Katare Guidan Ousmane 2
+Kataré Guidan Ousman II -> Katare Guidan Ousmane 2
+Kodéraoua -> Koderaoua
+Koderawa -> Koderaoua
+Kantagora Goussaoua -> Kontagora Goussaoua
+Kontagora Goussaou -> Kontagora Goussaoua
+Kountagora Goussaou -> Kontagora Goussaoua
+kwantagora  Goussaoua -> Kontagora Goussaoua
+Ecole Kontagora Sofoua -> Kontagora Sofoua
+Kantagora Stohoua -> Kontagora Sofoua
+Kontagora Soufoua -> Kontagora Sofoua
+Kontagora Tsohoua -> Kontagora Sofoua
+Kantagora Tsofoua -> Kontagora Tsofoua
+Kontagora Tsofoua -> Kontagora Tsofoua
+Kountarou Mai Rairai -> Kountarou Mairairai
+Kountarou mairairai -> Kountarou Mairairai
+Louloubi Publique -> Louloubi
+Maijanguéro -> Maijanguero
+MAISSO -> Maisso
+M. Saboua -> Mallamai Saboua
+M.Saboua -> Mallamai Saboua
+Malloumai Saboua -> Mallamai Saboua
+Malloumai Salifou -> Mallamai Salifou
+Maradou  Centre -> Maradou Centre
+Maza Tsayé -> Maza Tsaye 1
+Maza Tsayé 1 -> Maza Tsaye 1
+Maza Tsayé I -> Maza Tsaye 1
+Maza Tsay√© 1 -> Maza Tsaye 1
+Maza Tsayé 2 -> Maza Tsaye 2
+Maza Tsaye II -> Maza Tsaye 2
+Mountarou Bermo -> Mountarou Barmo
+Na Maroua -> Namaroua
+Ecole Oumarou Gago -> Oumarou Laouali Gago
+Oumarou Gago -> Oumarou Laouali Gago
+Oumarou Lawali Gago -> Oumarou Laouali Gago
+Riadi Centre 1 -> Radi Centre 1
+Riadi Centre I -> Radi Centre 1
+Riadi Centre 2 -> Radi Centre 2
+Riadi Centre II -> Radi Centre 2
+Riadi Quartier -> Radi Quartier
+Sabon gari kolta -> Sabon Gari Kolta
+Sabon Garin Kolta -> Sabon Gari Kolta
+Saé Saboua -> Sae Saboua
+Saé Saboua Publique 1 -> Sae Saboua
+Safo Chadawa -> Safo Chadaoua
+Saho Chadaoua -> Safo Chadaoua
+El Mougou -> Safo El Mougou
+Ecole de Safo Nassaraoua -> Safo Nassaraoua
+Safo Nassarawa -> Safo Nassaraoua
+SARKIN ASKI -> Sarkin Aski
+Soumrana -> Soumarana
+Soura I -> Soura 1
+Soura II -> Soura 2
+Soura III -> Soura 3
+Soura Magadji Rogo -> Soura Magaji Rogo
+Soura Magagi Rogo -> Soura Magaji Rogo
+Soura Magagin Rogo -> Soura Magaji Rogo
+Galma 1 -> Soura Sarkin Galma 1
+Soura S Galama 1 -> Soura Sarkin Galma 1
+Soura S Galma 1 -> Soura Sarkin Galma 1
+Soura Sarkin Galma I -> Soura Sarkin Galma 1
+Soura Sarkin Galma1 -> Soura Sarkin Galma 1
+Galma 2 -> Soura Sarkin Galma 2
+Soura S Galma 2 -> Soura Sarkin Galma 2
+Soura Sarkin Galma  2 -> Soura Sarkin Galma 2
+Soura Sarkin Galma II -> Soura Sarkin Galma 2
+Soura Sarkin Galma2 -> Soura Sarkin Galma 2
+Ecole Tajayé Djirataoua -> Tajaye Djirataoua
+Tajae Djirataoua -> Tajaye Djirataoua
+Tajae Djiratawa -> Tajaye Djirataoua
+Tajayé Djirataoua -> Tajaye Djirataoua
+Taja√© Djirataoua -> Tajaye Djirataoua
+Takalmaoua I -> Takalmaoua 1
+Takalmawa 1 -> Takalmaoua 1
+Takalmaoua II -> Takalmaoua 2
+Tchikadji  Centre -> Tchikadji Centre
+Tchikaji Centre -> Tchikadji Centre
+TChikadji Quartier -> Tchikadji Quartier
+Tchikaji Quartier -> Tchikadji Quartier
+Nord 3 -> Tibiri Nord 3
+Tibiri Nord III -> Tibiri Nord 3
+Tuzza -> Touzza
+Tsanna -> Tsanna Publique
+Tsanna publique -> Tsanna Publique
+Ya doto Balla -> Yan Doto Bala
+Yan dota Balla -> Yan Doto Bala
+Yan Doto Balla -> Yan Doto Bala
+Yandota Balla -> Yan Doto Bala
+Dan Doto Garin Malam -> Yan Doto Garin Malam
+Yan doto Garin Malam -> Yan Doto Garin Malam
+Yan doto garin malan -> Yan Doto Garin Malam
+Yandoto Garin Malan -> Yan Doto Garin Malam
+
+# === SESSION ADDITIONS (v3, July 2026) ===
+# C8 commune-file name variants
+GAWARO MADATTAI -> Gawaro
+Gawaro Madateye -> Gawaro
+Gawaro Madataye -> Gawaro
+G Bouwèye -> Garin Bouwey
+G.Bouweye -> Garin Bouwey
+G.Bouwèye -> Garin Bouwey
+G.bouwèye -> Garin Bouwey
+Garin Bouweye -> Garin Bouwey
+Garin Bouwaye -> Garin Bouwey
+ALSAWA -> Alssaoua
+Harhin Hali -> Karhin Hali
+Indoto Balla -> Yan Doto Bala
+Guidan dan galadima -> Guidan Dan Galdima
+Elmougou -> Safo El Mougou
+Bilingue Djirataoua -> Djirataoua Bilingue
+Jirataouabilingue -> Djirataoua Bilingue
+Djirataoua Biling -> Djirataoua Bilingue
+AtchidaKofoto bilingue -> Atchidakofoto Bilingue
+Karambi Tsohoua -> Karambi Sofoua
+Karambi Tsofouwa -> Karambi Sofoua
+Moutarou 1 -> Mountarou 1
+Oumarou l Gago -> Oumarou Laouali Gago
+Jan Rouwa Sedentaire -> Jan Ruwa Sedentaire
+Soura Magajin Rogo -> Soura Magaji Rogo
+Tchadoua Tawalala -> Tawalala
+Tchikaji quartier -> Tchikadji Quartier
+Kontagora Goussawa -> Kontagora Goussaoua
+dan tumbi -> Dan Toumbi
+kotsi -> Algafia/Kotsi
+Koura Mota -> Kouran Mota
+Takalmaou 1 -> Takalmaoua 1
+Gagadama Kadagama -> Gagadama
+Tsana Publique -> Tsanna Publique
+Riadi Centre1 -> Radi Centre 1
+Riadi Centre2 -> Radi Centre 2
+Saé Saboua publq1 -> Sae Saboua

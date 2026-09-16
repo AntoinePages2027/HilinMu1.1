@@ -1,0 +1,32 @@
+pair_id,commune,int_school,ctrl_school,int_in_data,ctrl_in_data
+C4-01,Djirataoua,Atchidakofoto Bilingue,Kontagora Goussaoua,True,True
+C4-02,Djirataoua,Namaroua,Dan Kari,True,True
+C4-03,Djirataoua,Takalmaoua 1,Kontagora Sofoua,True,True
+C4-04,Djirataoua,Takalmaoua 2,Tajaye Djirataoua,True,True
+C4-05,Djirataoua,Sabon Gari Kolta,Dallia,True,True
+C4-06,Djirataoua,Danja 1,Djirataoua Bilingue,True,True
+C4-07,Djirataoua,Danja 2,Bassaraoua,True,True
+C4-08,Djirataoua,El Kokia,Galadantchi,True,True
+C4-09,Djirataoua,Koderaoua,Oumarou Laouali Gago,True,True
+C4-10,Tibiri,Soura Sarkin Galma 2,Guigamaoua Sofoua,True,True
+C4-11,Tibiri,Soura Sarkin Galma 1,Imbelbelou 3,True,True
+C4-12,Tibiri,Katare 1,Kara Kara 3,True,True
+C4-13,Tibiri,Katare 2,Garin Malam Hamza,True,True
+C4-14,Tibiri,Soura 2,Garin Magaji,True,True
+C4-15,Tibiri,Soura 3,Yan Zango,True,True
+C4-16,Tibiri,Garin Yari Idi,Garin Bormo,True,True
+C4-17,Tibiri,Soura Magaji Rogo,Maisso,True,True
+C4-18,Tibiri,Tibiri Nord 3,Garin Daoure 1,True,True
+C4-19,Tibiri,Waraou,Tibiri Magagia Gobir,True,False
+C4-20,Tibiri,Kalgon Waraou,Garin Daoure 2,True,True
+C4-21,Tibiri,Dan Fillo 3,Goumar 2,True,False
+C4-22,Tibiri,Soura Aboubacar 4,Kara Kara 2,True,True
+C4-23,Safo,Tchikadji Quartier,Soumarana,True,True
+C4-24,Safo,Safo Dan Ali,Safo Chadaoua,True,True
+C4-25,Safo,Safo El Mougou,Gade,True,True
+C4-26,Safo,Tarna,Radi Centre 1,True,True
+C4-27,Safo,Maradou Quartier,Kankaran Safo,True,True
+C4-28,Safo,Safo Nassaraoua,Radi Centre 2,True,True
+C4-29,Safo,Soura 1,Goumar 1,True,False
+C4-30,Safo,Tchikadji Centre,Kagara,True,True
+C4-31,Safo,Maradou Centre,Radi Quartier,True,True
